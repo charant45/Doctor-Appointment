@@ -46,8 +46,8 @@ const Section = () => {
                   <i className="fa-regular fa-user-plus"></i>
                 </div>
                 <div className="_info_text">
-                  <p> 100,000+ </p>
-                  <p> patients/yers </p>
+                  <p> 10000+ </p>
+                  <p> patients/year </p>
                 </div>
               </div>
             </div>

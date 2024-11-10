@@ -23,7 +23,7 @@ const VerificationEmailGuard = ({ children }) => {
         })
         .catch((er) => {
           remove("TOKEN_USER")
-          navigate("/connexion");
+          navigate("/login");
         });
     }
   }, [dispatch, navigate, UserData.isAuthenticated, UserData.user]);

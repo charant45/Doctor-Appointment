@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import TableDoctors from "./TableDoctors";
 import { Link } from "react-router-dom";
 
 const MainTable = ({ setShowAlertSucces }) => {
-  // const [show, setShow] = useState(false);
-
   return (
     <>
       <div className="p-4 bg-white block sm:flex items-center justify-between border-b border-gray-200 lg:mt-1.5 dark:bg-gray-800 dark:border-gray-700">
         <div className="w-full mb-1">
-          {/* Header of Page  */}
-
           <div className="mb-4">
             <nav className="flex mb-5" aria-label="Breadcrumb">
               <ol className="inline-flex items-center space-x-1 text-sm font-medium md:space-x-2">
@@ -48,7 +44,7 @@ const MainTable = ({ setShowAlertSucces }) => {
                       to="#"
                       className="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white"
                     >
-                      RendezVous
+                      Appointment
                     </Link>
                   </div>
                 </li>
@@ -77,14 +73,11 @@ const MainTable = ({ setShowAlertSucces }) => {
               </ol>
             </nav>
             <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
-              Tout Les RendezVous
+              All Appointments
             </h1>
           </div>
 
-          {/* End Header Of page */}
-
           <div className="sm:flex">
-            {/* Start  Search Input */}
             <div className="items-center hidden mb-3 sm:flex sm:divide-x sm:divide-gray-100 sm:mb-0 dark:divide-gray-700">
               <form className="lg:pr-3" action="#" method="GET">
                 <label htmlFor="users-search" className="sr-only">
@@ -102,14 +95,11 @@ const MainTable = ({ setShowAlertSucces }) => {
               </form>
               <div className="flex pl-0 mt-3 space-x-1 sm:pl-2 sm:mt-0"></div>
             </div>
-            {/* END Search Input */}
-
-            {/* Start Button Add Apointment  */}
-            {/* <div className="flex items-center ml-auto space-x-2 sm:space-x-3">
+            <div className="flex items-center ml-auto space-x-2 sm:space-x-3">
               <button
                 type="button"
                 className="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                onClick={() => setShow(!show)}
+                onClick={() => setShowAlertSucces(true)}
               >
                 <svg
                   className="w-5 h-5 mr-2 -ml-1"
@@ -123,15 +113,13 @@ const MainTable = ({ setShowAlertSucces }) => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Ajouter RendezVous
+                Add Appointment
               </button>
-            </div> */}
-            {/* ENd Button Add Apointment */}
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Component Table  Appointment */}
       <TableDoctors
         setShowAlertSucces={setShowAlertSucces}
       />

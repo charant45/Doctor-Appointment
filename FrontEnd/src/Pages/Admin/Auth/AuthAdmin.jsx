@@ -68,8 +68,8 @@ const AuthAdmin = () => {
 
   return (
     <>
-      <div className=" absolute w-[100%] h-[133vh]  add_img">
-        <div className=" relative bg-black h-[133vh] bg-opacity-75 ">
+      <div className="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat" 
+        style={{ backgroundImage: "url('https://img.freepik.com/free-photo/high-angle-doctor-holding-patient-s-hand_23-2149941457.jpg?t=st=1731052811~exp=1731056411~hmac=46354da0a7ac6821bdfa03517173e707c8153567d72d56f02ccfa49fc85a909c&w=740')" }}>
           <Header />
           <div className="h-[41rem] flex justify-center items-center ">
             <div className="  w-[27rem] rounded-md  bg-white pl-8 pt-7 pr-8 pb-7">
@@ -130,14 +130,13 @@ const AuthAdmin = () => {
                   </a> 
                 </div>
                 <div className="flex justify-center items-center w-full ">
-                  <AuthButton Text={"se connecter"} Loading={loading} />
+                  <AuthButton Text={"Login"} Loading={loading} />
                 </div>
               </form>
             </div>
           </div>
-          <Footer colorText="white" />
+          <Footer colorText="black" />
         </div>
-      </div>
     </>
   );
 };

@@ -34,7 +34,7 @@ import DoctorEmailVerification from "../Middleware/DoctorEmailVerification";
 import DoctorsConfirmationGuard from "../Middleware/DoctorsConfirmationGuard";
 
 const { createBrowserRouter } = require("react-router-dom");
- 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -77,7 +77,7 @@ const router = createBrowserRouter([
   // Users Router
 
   {
-    path: "/user/verifyemail",
+    path: "/user/verifeyemail",
     element: (
       <VerificationEmailGuard>
         <UserVerifyEmail />
@@ -153,7 +153,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/doctor/verifyemail",
+    path: "/doctor/verifeyemail",
     element: (
       <DoctorEmailVerification>
         <DoctorsVerificationEmail />

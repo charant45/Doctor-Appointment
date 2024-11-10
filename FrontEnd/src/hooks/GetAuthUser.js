@@ -25,13 +25,13 @@ const GetAuthUser = () => {
         })
         .catch((er) => {
           remove("TOKEN_USER")
-          navigate("/connexion");
+          navigate("/login");
         });
     }
   }, [dispatch, navigate, UserData.isAuthenticated, UserData.user]);
 
   console.log(UserData);
-  console.log( "get authu ud" );
+  console.log( "get auth" );
 };
 
 export default GetAuthUser;

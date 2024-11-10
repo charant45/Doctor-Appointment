@@ -106,7 +106,7 @@ const Sidebar = () => {
               <div className="pt-2 space-y-2 absolute bottom-[13%]  w-[-webkit-fill-available] pr-[11px] ">
                 <div className="flex items-center mt-3 p-2 text-base cursor-pointer text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700">
                   <ArrowRightOnRectangleIcon className="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" />
-                  <span className="ml-3">Lougout</span>
+                  <span className="ml-3">Logout</span>
                 </div>
               </div>
             </div>

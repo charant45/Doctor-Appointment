@@ -45,7 +45,7 @@ const AuthDoctorGuard = ({ children }) => {
       get("TOKEN_DOCTOR") &&
       AuthDoctorData.doctor.email_verified_at === null
     ) {
-      return <Navigate to={"/doctor/verifyemail"} replace />;
+      return <Navigate to={"/doctor/verifeyemail"} replace />;
     } else if (
       AuthDoctorData.isAuthenticated &&
       get("TOKEN_DOCTOR") &&

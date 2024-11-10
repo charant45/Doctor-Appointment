@@ -32,19 +32,19 @@ const TableHistorique = () => {
                       scope="col"
                       className="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400"
                     >
-                      Nom & Prenom
+                      Name & Surname
                     </th>
                     <th
                       scope="col"
                       className="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400"
                     >
-                      Cin
+                      National ID
                     </th>
                     <th
                       scope="col"
                       className="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400"
                     >
-                      Numero Telephone
+                      Phone Number
                     </th>
                     <th
                       scope="col"
@@ -56,13 +56,13 @@ const TableHistorique = () => {
                       scope="col"
                       className="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400"
                     >
-                      Date Rendezvous
+                      Appointment Date
                     </th>
                     <th
                       scope="col"
                       className="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400"
                     >
-                      Heur
+                      Hour
                     </th>
                     <th
                       scope="col"

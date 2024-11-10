@@ -65,94 +65,88 @@ const Login = () => {
   };
 
   return (
-    <>
-      <div className=" absolute w-[100%] h-[133vh]  add_img">
-        <div className=" relative bg-black h-[133vh] bg-opacity-75 ">
-          <Header />
-          <div className="h-[41rem] flex justify-center items-center ">
-            <div className="  w-[27rem] rounded-md  bg-white pl-8 pt-7 pr-8 pb-7">
-              <div className=" text-center">
-                <div className="flex justify-center items-center">
-                  <img src="/img/logo.png" className="w-[123px]" alt="" />
-                </div>
-                <div className="mb-[14px]">
-                  <h1 className="mt-4 text-[25px] font-medium text-gray-900 ">
-                    Welcome to DocAppoint
-                  </h1>
-                </div>
-                <div>
-                  <p className=" text-[14px] text-slate-400	">
-                    {" "}
-                    You are creating your first DocAppoint account to get an
-                    appointment with a doctor!!{" "}
-                  </p>
-                </div>
+    <div className="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat" 
+        style={{ backgroundImage: "url('https://img.freepik.com/free-photo/high-angle-doctor-holding-patient-s-hand_23-2149941457.jpg?t=st=1731052811~exp=1731056411~hmac=46354da0a7ac6821bdfa03517173e707c8153567d72d56f02ccfa49fc85a909c&w=740')" }}>
+      <Header />
+      <main className="flex-grow flex justify-center items-center px-4 py-12 ">
+        <div className="w-full max-w-md bg-white rounded-lg shadow-xl overflow-hidden">
+          <div className="p-6 sm:p-8">
+            <div className="text-center">
+              <img src="/img/logo.png" className="w-32 mx-auto mb-4" alt="DocAppoint Logo" />
+              <h1 className="text-2xl font-semibold text-gray-900 mb-2">
+                Welcome to DocAppoint
+              </h1>
+              <p className="text-sm text-gray-600 mb-6">
+                Log in to your DocAppoint account to manage your appointments
+              </p>
+            </div>
+            {error && <AlertErrorMessage message={error} />}
+            <form className="space-y-4" onSubmit={HandleSubmit}>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+                            focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  placeholder="exemple@gmail.com"
+                  required
+                  onChange={HandleChangeData}
+                />
               </div>
-              {error && <AlertErrorMessage message={error} />}
-              <form className="  p-5 pl-8 pr-8 " onSubmit={HandleSubmit}>
-                <div className="mb-[20px]">
-                  <label
-                    htmlFor="email"
-                    className="block mb-1 text-[12px]  font-medium text-gray-900 dark:text-white"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-[12px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full   py-[4px] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="exemple@gmail.com"
-                    required
-                    onChange={HandleChangeData}
-                  />
-                </div>
-
-                <div className="mb-[20px]">
-                  <label
-                    htmlFor="Password"
-                    className="block mb-1 text-[12px]  font-medium text-gray-900 dark:text-white"
-                  >
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    id="Password"
-                    name="password"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-[12px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full   py-[4px] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="•••••••••"
-                    required
-                    onChange={HandleChangeData}
-                  />
-                </div>
-                <div className=" mb-2">
-                  <a href="/tets" className="  flex  flex-row-reverse ">
-                    <span className="text-medium tracking-wide text-[13px] text-blue-600">
-                      Forgot your password?
-                    </span>
-                  </a>
-                </div>
-                <div className="flex justify-center items-center w-full ">
-                  <AuthButton Text={"se connecter"} Loading={loading} />
-                </div>
-              </form>
-              <div className="  flex justify-center items-center mb-4 ">
-                <p className="mt-4 text-[14px] text-gray-500 sm:mt-0">
-                  Don't have an account?
-                  <Link to="/doctor/signup" className="text-gray-700 underline">
-                    {" "}
-                    Log in
-                  </Link>
-                  .
-                </p>
+              <div>
+                <label
+                  htmlFor="Password"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="Password"
+                  name="password"
+                  className="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+                            focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  placeholder="•••••••••"
+                  required
+                  onChange={HandleChangeData}
+                />
               </div>
+              <div className="flex items-center justify-end">
+                <a href="/forgot-password" className="text-sm text-blue-600 hover:underline">
+                  Forgot your password?
+                </a>
+              </div>
+              <div>
+                <AuthButton Text="Log in" Loading={loading} />
+              </div>
+            </form>
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600">
+                Don't have an account?{" "}
+                <Link to="doctor/signup" className="font-medium text-blue-600 hover:underline">
+                  Sign up
+                </Link>
+              </p>
+            </div>
+            <div className="mt-2 text-center">
+              <Link to="/doctor/login" className="text-sm font-medium text-blue-600 hover:underline">
+                Are you a doctor?
+              </Link>
             </div>
           </div>
-          <Footer colorText="white" />
         </div>
-      </div>
-    </>
+      </main>
+      <Footer colorText="black" />
+    </div>
   );
 };
+
 
 export default Login;

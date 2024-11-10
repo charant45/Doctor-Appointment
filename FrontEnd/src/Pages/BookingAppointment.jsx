@@ -52,7 +52,7 @@ const BookingAppointment = () => {
           dispatch(addUserData(re.data));
         })
         .catch((er) => {
-          navigate("/connexion");
+          navigate("/login");
         });
     }
 
@@ -183,7 +183,7 @@ const BookingAppointment = () => {
                               htmlFor="countries"
                               className="block mb-1 text-[13px] font-medium text-gray-900 dark:text-white"
                             >
-                              Type Apointment
+                              Type Appointment
                             </label>
                             <div className="relative max-w-sm">
                               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -198,9 +198,9 @@ const BookingAppointment = () => {
                                 <option>Type Appointment</option>
                                 <option value={"urgent"}>Urgent</option>
                                 <option value={"nouveau patient"}>
-                                  Nouveau Patient
+                                  New Patient
                                 </option>
-                                <option value={"suivi"}>Suivi</option>
+                                <option value={"suivi"}>Follow-up</option>
                                 <option value={"diagnostic"}>Diagnostic</option>
                                 <option value={"consultation"}>
                                   Consultation
@@ -212,7 +212,7 @@ const BookingAppointment = () => {
 
                         <div className=" mt-3  flex justify-center ">
                           <button className="text-white w-[37%] bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[12px]   px-4 py-2 text-center ">
-                            prendre
+                            Take
                           </button>
                         </div>
                       </form>

@@ -56,7 +56,7 @@ const MainTable = () => {
                       to="#"
                       className="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white"
                     >
-                      RendezVous
+                      Appointment
                     </Link>
                   </div>
                 </li>
@@ -85,7 +85,7 @@ const MainTable = () => {
               </ol>
             </nav>
             <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
-              Tout Les RendezVous
+              All Appointments
             </h1>
           </div>
 
@@ -131,7 +131,7 @@ const MainTable = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                Ajouter RendezVous
+                Add Appointment
               </button>
             </div>
             {/* ENd Button Add Apointment */}

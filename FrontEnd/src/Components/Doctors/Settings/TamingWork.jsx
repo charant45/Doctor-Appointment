@@ -64,7 +64,7 @@ const TamingWork = () => {
                 htmlFor="day_debut_work"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Select Day Debu De work
+                Select Start Day of Work
               </label>
               <select
                 id="day_debut_work"
@@ -73,7 +73,7 @@ const TamingWork = () => {
                 value={DataForm.day_debut_work}
                 className="bg-gray-50 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
               >
-                <option>Select Day Debu De work</option>
+                <option>Select Start Day of Work</option>
                 <option value="Sunday">Sunday</option>
                 <option value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
@@ -88,7 +88,7 @@ const TamingWork = () => {
                 htmlFor="day_fin_work"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Select Day fin De work
+                Select End Day of Work
               </label>
               <select
                 id="day_fin_work"
@@ -97,7 +97,7 @@ const TamingWork = () => {
                 onChange={HandelChange}
                 className="bg-gray-50 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
               >
-                <option>Select Day fin De work</option>
+                <option>Select End Day of Work</option>
                 <option value="Sunday">Sunday</option>
                 <option value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
@@ -115,7 +115,7 @@ const TamingWork = () => {
                 htmlFor="time_debut_work"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Time Debut Work (Like 00:00)
+                Start Time of Work (Like 00:00)
               </label>
               <input
                 type="text"
@@ -133,7 +133,7 @@ const TamingWork = () => {
                 htmlFor="time_fin_work"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Time Debut Work (Like 00:00)
+                Start Time of Work (Like 00:00)
               </label>
               <input
                 type="text"
@@ -153,7 +153,7 @@ const TamingWork = () => {
                 htmlFor="appointment_time"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                appointment time (In Minutes)
+                Appointment Time (In Minutes)
               </label>
               <input
                 type="text"

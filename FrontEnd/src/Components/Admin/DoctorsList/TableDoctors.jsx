@@ -51,13 +51,13 @@ const TableDoctors = ({setShowAlertSucces}) => {
                         scope="col"
                         className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                       >
-                        Nom & Prenom
+                        Last Name & First Name
                       </th>
                       <th
                         scope="col"
                         className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                       >
-                        Matricule
+                        Registration ID
                       </th>
                       <th
                         scope="col"
@@ -118,7 +118,7 @@ const TableDoctors = ({setShowAlertSucces}) => {
                             ) : (
                               <div className="flex items-center">
                                 <div className="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div>
-                                No Virified
+                                No Verified
                               </div>
                             )}
                           </td>

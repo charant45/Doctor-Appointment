@@ -50,10 +50,10 @@ const AlertToRegistre = ({showAlertToRegistre , setSowAlertToRegistre }) => {
               ></path>
             </svg>
             <h3 className="mt-5 mb-6 text-lg text-gray-500 dark:text-gray-400">
-              pour obtenir un rendez vous , vous devez
+              To get an appointment, you must
               <Link to="/connection" className=" text-primary-600 ">
                 {" "}
-                connecter{" "}
+                connect{" "}
               </Link>
               !
             </h3>

@@ -15,7 +15,7 @@ const TablePatient = () => {
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Nom & Prenom
+                      Last Name & First Name
                     </th>
                     <th
                       scope="col"
@@ -27,7 +27,7 @@ const TablePatient = () => {
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Numero Telephone
+                      Phone Number
                     </th>
                     <th
                       scope="col"
@@ -39,13 +39,13 @@ const TablePatient = () => {
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Date Rendezvous
+                      Appointment Date
                     </th>
                     <th
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Heur
+                      Hour
                     </th>
                     <th
                       scope="col"
@@ -103,7 +103,7 @@ const TablePatient = () => {
                         // }}
                       >
                         <XCircleIcon className="w-4 h-4 mr-2 " />
-                        Annuler
+                        Cancel
                       </button>
                     </td>
                   </tr>

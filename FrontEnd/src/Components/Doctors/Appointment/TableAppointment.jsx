@@ -37,19 +37,19 @@ const TableAppointment = ({
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Nom & Prenom
+                      Name & Surname
                     </th>
                     <th
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Cin
+                      ID Number
                     </th>
                     <th
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Numero Telephone
+                      Phone Number
                     </th>
                     <th
                       scope="col"
@@ -61,13 +61,13 @@ const TableAppointment = ({
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Date Rendezvous
+                      Appointment Date
                     </th>
                     <th
                       scope="col"
                       className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                     >
-                      Heur
+                      Time
                     </th>
                     <th
                       scope="col"
@@ -109,13 +109,6 @@ const TableAppointment = ({
                           {el.time_appointment}
                         </td>
                         <td className="p-4 space-x-2 whitespace-nowrap">
-                          {/* <button
-                            type="button"
-                            className="inline-flex items-center px-2 py-1.5 text-[14px] font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 "
-                          >
-                            <CheckCircleIcon className="w-[1.4rem] h-[1.4rem] mr-2 " />
-                            Terminer
-                          </button> */}
                           <button
                             type="button"
                             className="inline-flex items-center px-2 py-1.5 text-[14px] font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:ring-red-300 dark:focus:ring-red-900"
@@ -125,7 +118,7 @@ const TableAppointment = ({
                             }}
                           >
                             <XCircleIcon className="w-4 h-4 mr-2 " />
-                            Annuler
+                            Cancel
                           </button>
                         </td>
                       </tr>

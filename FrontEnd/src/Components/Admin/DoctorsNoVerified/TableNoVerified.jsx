@@ -60,13 +60,13 @@ const TableNoVerified = ({ setShowAlertSucces }) => {
                         scope="col"
                         className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                       >
-                        Nom & Prenom
+                        Last Name & First Name
                       </th>
                       <th
                         scope="col"
                         className="p-4 text-[14px] font-medium text-left text-gray-500 uppercase "
                       >
-                        Matricule
+                        Registration ID
                       </th>
                       <th
                         scope="col"

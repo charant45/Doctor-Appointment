@@ -27,13 +27,13 @@ const AuthGuard = ({ children }) => {
         })
         .catch((er) => {
           remove("TOKEN_USER")
-          navigate("/connexion");
+          navigate("/login");
         });
     }
   }, [dispatch, navigate, AuthUserData.isAuthenticated, AuthUserData.user]);
 
   if (!AuthUserData.isAuthenticated && !get("TOKEN_USER")) {
-    return <Navigate to="/Connexion" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   if (!Loading && AuthUserData.user) {

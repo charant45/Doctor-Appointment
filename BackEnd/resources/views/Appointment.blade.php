@@ -41,7 +41,7 @@
       color: #333333;
     }
 
-    .adress {
+    .address {
       font-size: 18px;
       margin: 0;
       margin-bottom: 1.5rem;
@@ -67,7 +67,7 @@
       color: #333333;
     }
 
-    .RendezDate {
+    .AppointmentDate {
       margin-top: 1rem;
       font-size: 22px;
       font-weight: bold;
@@ -82,17 +82,17 @@
     <div class="section">
       <div class="infoDoctor">
         <h2>Doctor {{ $doctor->firstname }} {{$doctor->lastname}} </h2>
-        <p class="adress">{{ $doctor->address_cabinet }}</p>
-        <p class="tel">Tél: {{ $doctor->phoneNumber }}</p>
+        <p class="address">{{ $doctor->address_cabinet }}</p>
+        <p class="tel">Phone: {{ $doctor->phoneNumber }}</p>
       </div>
       <div class="UserInfo">
-        Nom: {{ $user->firstname }} {{$user->lastname}} | CIN: {{ $user->cin }}
+        Name: {{ $user->firstname }} {{$user->lastname}} | ID: {{ $user->cin }}
       </div>
       <div class="textRen">
-        Votre prochain rendez-vous :
+        Your next appointment:
       </div>
-      <div class="RendezDate">
-        Date: {{ $appointment->date_appointment }} | Heure: {{ $appointment->time_appointment }}
+      <div class="AppointmentDate">
+        Date: {{ $appointment->date_appointment }} | Time: {{ $appointment->time_appointment }}
       </div>
     </div>
   </div>

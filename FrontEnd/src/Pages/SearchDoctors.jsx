@@ -73,7 +73,7 @@ const SearchDoctors = () => {
               </div>
               <div className="search_input">
                 <label htmlFor="Ville" className="label_search">
-                  Ville
+                  City
                   <i className="fa-light fa-chevron-down"></i>
                 </label>
                 <input
@@ -81,13 +81,13 @@ const SearchDoctors = () => {
                   type="text"
                   name="address_cabinet"
                   className="input_search"
-                  placeholder="Choose Ville"
+                  placeholder="Choose City"
                   onChange={HandleChangeData}
                 />
               </div>
               <div className="search_input">
                 <label htmlFor="Docteur" className="label_search">
-                  Docteur
+                  Doctor
                   <i className="fa-light fa-chevron-down"></i>
                 </label>
                 <input
@@ -95,13 +95,13 @@ const SearchDoctors = () => {
                   type="text"
                   name="firstname"
                   className="input_search"
-                  placeholder="Choose Docteur"
+                  placeholder="Choose Doctor"
                   onChange={HandleChangeData}
                 />
               </div>
               <div className="search_input">
                 <label htmlFor="Hôpital" className="label_search">
-                  Hôpital
+                  Hospital
                   <i className="fa-light fa-chevron-down"></i>
                 </label>
                 <input
