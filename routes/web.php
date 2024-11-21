@@ -23,9 +23,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/report', [ReportController::class, 'index'])->name("report");
     Route::post('/report', [ReportController::class, 'appointment_bwdates'])->name("appointment.bwdates");
 
-    Route::get('/profile', [ProflController::class, 'index'])->name("profile");
+    Route::get('/profil', [ProflController::class, 'index'])->name("profil");
     Route::get('/change-password', [ProflController::class, 'show'])->name('changePassword');
-    Route::put('/profile', [ProflController::class, 'update'])->name("profile.update");
+    Route::put('/profil', [ProflController::class, 'update'])->name("profil.update");
 });
 
 Route::get('/', [AppointmentController::class, 'index'])->name("appointment.index");

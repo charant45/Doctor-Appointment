@@ -8,16 +8,16 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex">
 
-                        10:30 am to 7:30 pm </li>
+                        10:30 am to 8:30 pm </li>
                 </ul>
                 <h5 class="mb-lg-4 mb-3">Email</h5>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex">
-                        info@gmail.com</li>
+                        aviclinic@gmail.com</li>
                     <br>
                     <h5 class="mb-lg-4 mb-3">Contact Number</h5>
                     <li class="list-group-item d-flex">
-                        7896541239</li>
+                        7569450887</li>
                 </ul>
             </div>
 
@@ -26,7 +26,7 @@
 
 
 
-                <p>890,Sector 62, Gyan Sarovar, GAIL Noida(Delhi/NCR)</p>
+                <p>Near Andhra Bank main Road, Gajuwaka,Visakhapatnam 530053</p>
             </div>
             <div class="col-lg-3 col-md-6 col-12 ms-auto">
                 <h5 class="mb-lg-4 mb-2">Socials</h5>

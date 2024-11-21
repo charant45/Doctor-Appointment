@@ -22,7 +22,7 @@
     <div class="simple-page-wrap">
         <div class="simple-page-logo animated swing">
 
-            <span style="color: white"><i class="fa fa-gg"></i></span>
+            <span style="color: white"><i class="fa fa-hospital-o"></i></span>
             <span style="color: white">AVI Clinic</span>
 
         </div><!-- logo -->

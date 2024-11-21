@@ -40,24 +40,29 @@
 
                     <p>
                     <div>
-                        <font color="#202124" face="arial, sans-serif"><b>Our mission declares our purpose of
-                                existence as a company and our objectives.</b></font>
+                        <font color="#202124" face="arial, sans-serif">
+                            <b>Our mission declares our purpose of existence as a healthcare provider and our objectives.</b>
+                        </font>
                     </div>
                     <div>
-                        <font color="#202124" face="arial, sans-serif"><b><br></b></font>
+                        <font color="#202124" face="arial, sans-serif">
+                            <b><br></b>
+                        </font>
                     </div>
                     <div>
-                        <font color="#202124" face="arial, sans-serif"><b>To give every customer much more than what
-                                he/she asks for in terms of quality, selection, value for money and customer
-                                service, by understanding local tastes and preferences and innovating constantly to
-                                eventually provide an unmatched experience in jewellery shopping.</b></font>
-                    </div>.</p>
+                        <font color="#202124" face="arial, sans-serif">
+                            <b>To deliver exceptional healthcare services that exceed patient expectations by prioritizing quality care, 
+                            advanced medical technology, and compassionate support, while understanding individual needs to provide an 
+                            unmatched experience in health and wellness.</b>
+                        </font>
+                    </div>
+                    </p>
 
                 </div>
 
                 <div class="col-lg-4 col-md-5 col-12 mx-auto">
                     <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
-                        <p class="featured-text"><span class="featured-number">12</span> Years<br> of Experiences
+                        <p class="featured-text"><span class="featured-number">1</span> Years<br> of Experiences
                         </p>
                     </div>
                 </div>
@@ -138,6 +143,8 @@
                                 <div class="col-lg-6 col-12">
                                     <select name="Doctor" id="Doctor" class="form-control">
                                         <option value=''>Select Doctor</option>
+                                        <option value="Dr. Praveen Kumar">Dr. Praveen Kumar</option>
+                                        <option value="Dr. Priya Kumari">Dr. Priya Kumari</option>
                                     </select>
                                 </div>
 

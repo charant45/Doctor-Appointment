@@ -12,6 +12,14 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
+
+
+            <a class="navbar-brand d-flex align-items-center" href="/" style="text-decoration: none; color: inherit;">
+                <span style="font-weight: bold; font-size: 1.5rem;">AVI</span>
+                <span style="font-weight: normal; margin-left: 0.5rem; font-size: 1.5rem;">Clinic</span>
+            </a>
+
+
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home</a>
                 </li>
@@ -20,12 +28,6 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
 
-
-
-                <a class="navbar-brand d-none d-lg-block" href="/">
-                    Doctor Appointment
-                    <strong class="d-block">Management System</strong>
-                </a>
 
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('appointment.check') }}">Check Appointment</a>

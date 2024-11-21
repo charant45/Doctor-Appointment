@@ -11,7 +11,7 @@
                 <hr class="widget-separator">
                 <div class="widget-body">
 
-                    <form class="form-horizontal" method="post" action="{{ route('profil.update', $user->id) }}">
+                    <form class="form-horizontal" method="post" action="{{ route('profile.update', $user->id) }}">
                         @method('PUT')
                         @csrf
 
